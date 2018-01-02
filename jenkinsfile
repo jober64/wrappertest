@@ -1,0 +1,12 @@
+  node("maven") {
+  
+    stage("Load") {
+      git 'https://github.com/jober64/wrappertest.git'
+    }
+    
+    stage("Build") {
+    sh "./gradlew build"
+    }
+    
+  } 
+
