@@ -5,7 +5,9 @@
     }
     
     stage("Build") {
+    sh "ls -hal"
     sh "./gradlew build"
+    sh "ls -hal"
     }
     
   } 
